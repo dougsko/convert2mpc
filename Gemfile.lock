@@ -1,0 +1,39 @@
+PATH
+  remote: .
+  specs:
+    convert2mpc (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (0.8.1)
+    diff-lcs (1.3)
+    rake (10.5.0)
+    rspec (3.6.0)
+      rspec-core (~> 3.6.0)
+      rspec-expectations (~> 3.6.0)
+      rspec-mocks (~> 3.6.0)
+    rspec-core (3.6.0)
+      rspec-support (~> 3.6.0)
+    rspec-expectations (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-mocks (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-support (3.6.0)
+    ruby-progressbar (1.10.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  colorize
+  convert2mpc!
+  rake (~> 10.0)
+  rspec (~> 3.0)
+  ruby-progressbar
+
+BUNDLED WITH
+   1.16.2
