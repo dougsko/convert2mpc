@@ -23,8 +23,8 @@ module Convert2mpc
                     media = Media.new(file)
                     @media_list << media
                     begin
-                        #system("ffmpeg -i \"#{media.path_name.to_s}\" -sample_fmt s16 -ar 44100 -ac 1 /tmp/a.wav")
-                        #FileUtils.mv("/tmp/a.wav", media.path_name.to_s)
+                        system("ffmpeg -i \"#{media.path_name.to_s}\" -sample_fmt s16 -ar 44100 -ac 1 /tmp/a.wav")
+                        FileUtils.mv("/tmp/a.wav", media.path_name.to_s)
                     rescue
                         puts "ERROR: " + media.path_name.to_s
                     end
