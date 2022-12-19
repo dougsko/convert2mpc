@@ -1,3 +1,5 @@
+require 'fileutils'
+
 module Convert2mpc
     class Converter
         def initialize(src_dir, dst_dir)
@@ -37,7 +39,7 @@ module Convert2mpc
                 #end
                 pb.increment
             end
-            check_names(@media_list)
+            #check_names(@media_list)
         end
 
         def check_names(list)

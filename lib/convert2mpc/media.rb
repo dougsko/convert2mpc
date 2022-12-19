@@ -1,12 +1,18 @@
 module Convert2mpc
     class Media
-        attr_accessor :dir, :base, :path_name, :extension, :name_len
+        attr_accessor :dir, :base, :path_name, :extension, :name_len, :base_length, :short_name, :short_name_len
 
         def initialize(path)
             @path_name = Pathname.new(path)
             @dir, @base = @path_name.split
+            @short_name = @base
             @extension = File.extname(path)
             @name_len = File.basename(@base.to_s, ".*").size
+        end
+
+        def get_short_name_len
+            @short_name_len = File.basename(@short_name.to_s, ".*").size
+            puts @short_name_len
         end
 
         def remove_token(token)
